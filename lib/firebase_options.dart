@@ -44,46 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyATQA1mQDP4r4KE2u5QoFEttPLvx8WK-rg',
-    appId: '1:554602506203:web:bcb0eae5ca2da51e3ee9fe',
-    messagingSenderId: '554602506203',
-    projectId: 'nippo-e8922',
-    authDomain: 'nippo-e8922.firebaseapp.com',
-    databaseURL: 'https://nippo-e8922.firebaseio.com',
-    storageBucket: 'nippo-e8922.appspot.com',
-    measurementId: 'G-FXTJM2Q755',
+    apiKey: 'AIzaSyAzI4tTE_4Rjd-1kSI9A_1_hkR9YKD-i18',
+    appId: '1:85091586156:web:db6115fd0acbe8b6370849',
+    messagingSenderId: '85091586156',
+    projectId: 'practice-nippo',
+    authDomain: 'practice-nippo.firebaseapp.com',
+    storageBucket: 'practice-nippo.appspot.com',
+    measurementId: 'G-CEWBNHG6M4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDSPm7SNLRYk1bBp5DFku-n-A4PrmjQFuU',
-    appId: '1:554602506203:android:73f34ea6c319d7283ee9fe',
-    messagingSenderId: '554602506203',
-    projectId: 'nippo-e8922',
-    databaseURL: 'https://nippo-e8922.firebaseio.com',
-    storageBucket: 'nippo-e8922.appspot.com',
+    apiKey: 'AIzaSyAJN6uIvo0EaMtSFRkCah8fzq8c0r3p8_4',
+    appId: '1:85091586156:android:399799181f576eb1370849',
+    messagingSenderId: '85091586156',
+    projectId: 'practice-nippo',
+    storageBucket: 'practice-nippo.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyALpm4NWeHM-PkaBkMaVuOWUJhRG0DHE-I',
-    appId: '1:554602506203:ios:28faf2e71f77493b3ee9fe',
-    messagingSenderId: '554602506203',
-    projectId: 'nippo-e8922',
-    databaseURL: 'https://nippo-e8922.firebaseio.com',
-    storageBucket: 'nippo-e8922.appspot.com',
-    androidClientId: '554602506203-cvqnsumv3q5c3mk5oj800tr7lugoo81u.apps.googleusercontent.com',
-    iosClientId: '554602506203-2e3jkpfh6rabqmci2cck8k7ufkr9665e.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAp4ynGeuaKbHLcKbLmuigkGpwC3WuWfy0',
+    appId: '1:85091586156:ios:69f9da8a852190a6370849',
+    messagingSenderId: '85091586156',
+    projectId: 'practice-nippo',
+    storageBucket: 'practice-nippo.appspot.com',
     iosBundleId: 'com.htsuruo.nippo',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBtybmYxxJXGKEenplwwACZ9Oh860cYhds',
-    appId: '1:554602506203:ios:82ca5bda76750c973ee9fe',
-    messagingSenderId: '554602506203',
-    projectId: 'nippo-e8922',
-    databaseURL: 'https://nippo-e8922.firebaseio.com',
-    storageBucket: 'nippo-e8922.appspot.com',
-    androidClientId: '554602506203-cvqnsumv3q5c3mk5oj800tr7lugoo81u.apps.googleusercontent.com',
-    iosClientId: '554602506203-q1q39al7pn6i409hs0ec5t7r1hqs27te.apps.googleusercontent.com',
-    iosBundleId: 'com.htsuruo.nippo.RunnerTests',
+    apiKey: 'AIzaSyAp4ynGeuaKbHLcKbLmuigkGpwC3WuWfy0',
+    appId: '1:85091586156:ios:69f9da8a852190a6370849',
+    messagingSenderId: '85091586156',
+    projectId: 'practice-nippo',
+    storageBucket: 'practice-nippo.appspot.com',
+    iosBundleId: 'com.htsuruo.nippo',
   );
+
 }

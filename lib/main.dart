@@ -7,20 +7,14 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:nippo/app.dart';
 import 'package:nippo/firebase_options.dart';
-import 'package:package_info_plus/package_info_plus.dart';
-
-import 'common/common.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   usePathUrlStrategy();
 
-  final (_, appInfo) = await (
-    Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    ),
-    PackageInfo.fromPlatform().then(AppInfo.fromPackageInfo),
-  ).wait;
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   await FirebaseAppCheck.instance.activate(
     webProvider: ReCaptchaEnterpriseProvider(
@@ -40,9 +34,6 @@ Future<void> main() async {
   Intl.defaultLocale = 'ja';
   runApp(
     ProviderScope(
-      overrides: [
-        appInfoProvider.overrideWithValue(appInfo),
-      ],
       child: const MyApp(),
     ),
   );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   AppTheme._();
@@ -19,9 +18,9 @@ class AppTheme {
 
     return themeData.copyWith(
       splashFactory: InkSparkle.splashFactory,
-      textTheme: themeData.textTheme.apply(
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
+      // textTheme: themeData.textTheme.apply(
+      //   fontFamily: GoogleFonts.lato().fontFamily,
+      // ),
       // スクロール時にAppBarのElevationがでカラーが切り替わる表現を無効化
       appBarTheme: const AppBarTheme(scrolledUnderElevation: 0),
       dividerTheme: const DividerThemeData(space: 0),

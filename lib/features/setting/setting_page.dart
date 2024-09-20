@@ -70,7 +70,6 @@ class _AboutSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final appInfo = ref.watch(appInfoProvider);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -84,12 +83,12 @@ class _AboutSection extends ConsumerWidget {
         ),
         _dividerWithIndent,
         AboutListTile(
-          applicationVersion: appInfo.version.toString(),
+          // applicationVersion: appInfo.version.toString(),
           aboutBoxChildren: [
             Padding(
               // AboutDialogのpaddingに合わせる
               padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Text(appInfo.packageName),
+              child: Text('元々appInfoが表示されていました'),
             ),
           ],
           child: const Text('アプリケーション情報'),
