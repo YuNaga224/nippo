@@ -6,6 +6,7 @@ import 'package:nippo/features/post/form/post_form_page.dart';
 import 'package:nippo/features/post/post_list_page.dart';
 import 'package:nippo/features/setting/setting_page.dart';
 import 'package:nippo/features/signin/signin_page.dart';
+import 'package:nippo/features/test/test_page.dart';
 import 'package:nippo/features/user/user_page.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:tsuruo_kit/tsuruo_kit.dart';
@@ -30,6 +31,7 @@ class _Location {
   static const userPost = '/user/:uid/posts/:pid';
   static const profile = '/profile';
   static const setting = '/setting';
+  static const test = '/test';
 }
 
 @riverpod
@@ -74,7 +76,8 @@ class SettingPageRoute extends GoRouteData {
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) =>
       const MaterialPage(
-        fullscreenDialog: true,
+        // 変更を加えました
+        fullscreenDialog: false,
         child: _Root(child: SettingPage()),
       );
 }
@@ -131,6 +134,13 @@ class UserPostPageRoute extends GoRouteData {
       routes: [
         TypedGoRoute<ProfilePageRoute>(
           path: _Location.profile,
+        ),
+      ],
+    ),
+    TypedStatefulShellBranch(
+      routes: [
+        TypedGoRoute<TestPageRoute>(
+          path: _Location.test,
         ),
       ],
     ),
@@ -205,5 +215,14 @@ class ProfilePageRoute extends GoRouteData {
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return const UserPage.me();
+  }
+}
+
+class TestPageRoute extends GoRouteData {
+  const TestPageRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const TestPage();
   }
 }

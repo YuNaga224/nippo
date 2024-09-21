@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 enum NavigationItem {
   timeline(iconData: Icons.view_timeline_outlined, label: 'みんなの日報'),
   profile(iconData: Icons.person_outline, label: 'プロフィール'),
+  test(iconData: Icons.headphones, label: 'テスト'),
   ;
 
   const NavigationItem({required this.iconData, required this.label});
